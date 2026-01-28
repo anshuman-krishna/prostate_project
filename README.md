@@ -8,39 +8,22 @@ This project performs exploratory data analysis, Principal Component Analysis (P
 ## Project Structure
 
 prostate_project/
-
 │
-
 ├── data/
-
 │ ├── prostate.csv
-
 │ └── prostate_log.csv
-
 │
-
 ├── src/
-
 │ ├── 01_load_and_check.py
-
 │ ├── 02_descriptive_analysis.py
-
 │ ├── 03_log_transform.py
-
 │ ├── 04_pca.py
-
 │ ├── 05_simple_regression.py
-
 │ ├── 06_best_subset.py
-
 │ └── 07_prediction.py
-
 │
-
 ├── outputs/
-
 └── requirements.txt
-
 
 ---
 
