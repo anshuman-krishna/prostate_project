@@ -31,12 +31,13 @@ The dataset is located in data/prostate.csv.
 
 Important note:
 The dataset is space separated rather than comma separated. All scripts handle this format explicitly.
-
+---
 How to Run the Project
 All commands below must be executed from the project root directory.
 ```bash
 cd prostate_project
 ```
+---
 Step 1: Load and Check the Data
 This script loads the dataset, checks the number of observations and variables, and verifies that there are no missing values.
 
@@ -48,7 +49,7 @@ Expected output includes:
 Dataset dimensions
 Missing value check
 Preview of the data
-
+---
 Step 2: Descriptive Statistics and Visualization
 This script computes descriptive statistics and generates boxplots and scatter plots for exploratory analysis.
 
@@ -56,7 +57,7 @@ This script computes descriptive statistics and generates boxplots and scatter p
 python3 src/02_descriptive_analysis.py
 ```
 These plots help identify skewness, outliers, and non linear relationships.
-
+---
 Step 3: Log Transformation
 This script applies a logarithmic transformation to skewed variables and saves a transformed dataset.
 Log transformed variables:
@@ -76,7 +77,7 @@ After execution, the following file is created:
 ```bash
 data/prostate_log.csv
 ```
-
+---
 Step 4: Principal Component Analysis
 This script performs PCA on standardized explanatory variables and produces:
 - Proportion of variance explained plot
@@ -88,7 +89,7 @@ This script performs PCA on standardized explanatory variables and produces:
 python3 src/04_pca.py
 ```
 The response variable PSA is excluded from PCA to avoid information leakage.
-
+---
 Step 5: Simple Linear Regression
 This script computes correlations between the target variable and predictors, identifies the most correlated predictor, and fits a simple linear regression model.
 
@@ -97,7 +98,7 @@ python3 src/05_simple_regression.py
 ```
 
 The model predicts log PSA using log cancer volume.
-
+---
 Step 6: Best Subset Selection
 This script evaluates all combinations of predictors and selects the best multiple linear regression model using adjusted R².
 
@@ -105,7 +106,7 @@ This script evaluates all combinations of predictors and selects the best multip
 python3 src/06_best_subset.py
 ```
 This approach balances model performance and complexity.
-
+---
 Step 7: Final Prediction
 This script fits the final regression model and predicts PSA for a new patient.
 
